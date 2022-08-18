@@ -8,7 +8,6 @@
 				var pincel = tela.getContext('2d');
 				pincel.fillStyle = cor;
 				pincel.fillRect(x, y, tamanho, tamanho);
-				pincel.fill();
 				pincel.strokeStyle = 'black';
 				pincel.strokeRect(x, y, tamanho, tamanho);
 			}
@@ -17,7 +16,7 @@
 				var pincel = tela.getContext('2d');
 				pincel.font = '20px Georgia'; // fonte do texto
 				pincel.fillStyle = 'black'; // cor do texto
-				pincel.fillTexto(x, y, texto); // escrever o texto
+				pincel.fillText(x, y, texto); // escrever o texto
 			}
 			desenhaQuadrado(50, 50, 100, 'green');
 			desenhaQuadrado(150, 50, 100, 'green');
